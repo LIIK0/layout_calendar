@@ -11,8 +11,9 @@ body {
 
 .calendar {
   display: flex;
-  padding: $calendar-padding;
   flex-wrap: wrap;
+  margin-left: $calendar-padding;
+  margin-right: $calendar-padding;
   gap: $calendar-gap;
   width: $calendar-width;
 
@@ -50,7 +51,7 @@ body {
     }
   }
 
-  @for $i from 0 through 31 {
+  @for $i from 1 through 31 {
     &__day:nth-child(#{$i})::before {
       font-family: Arial, sans-serif;
       font-size: $font-size;
